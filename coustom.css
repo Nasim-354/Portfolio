@@ -66,9 +66,6 @@ body {
 /*==========
 main style
 ==========*/
-main {
-  margin: 250px 10% 50px;
-}
 main h1 span {
   color: #6daa3e;
 }
@@ -79,9 +76,7 @@ main .m-right img {
   height: 20rem;
   margin: 0 auto;
 }
-main .m-left {
-  margin:10% 0;
-}
+
 /*========
 About me style
 =========*/
@@ -89,10 +84,14 @@ section{
   margin:0 10% 50px;
 }
 section img{
+  display:block;
   margin: 0 auto;
   border-radius:5px;
   backdrop-filter: blur(50px);
   box-shadow:5px 5px 10px #6daa3e, -5px -5px 10px #6daa3e;
+}
+section .A-left{
+  margin:0 1rem;
 }
 section .A-right{
   margin:0 auto;
@@ -186,4 +185,37 @@ footer section
 footer{
   padding:1.5rem;
   margin:10px 0 0 0 ;
+}
+
+
+/*----------- media query---------------*/
+
+@media  screen and (min-width:770px) {
+  main{
+    margin:50px 10%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:row;
+  }
+  #About .A-left{
+    display:flex;
+    align-items:center;
+  }
+  #About img{
+    width:700px;
+    height:auto;
+  }
+  #About .A-right{
+    margin:0 50px;
+  }
+}
+
+@media  screen and (max-width:769px) {
+  main{
+    margin:200px 0  50px;
+  }
+  main .m-left h2{
+    margin-top:20px;
+  }
 }
