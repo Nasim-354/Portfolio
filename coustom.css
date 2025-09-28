@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+   margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+}
+#header img {
+  width: 100px;
+}
+.cont {
+  margin-bottom: 40px;
+}
+
+#header .H-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 10%;
+}
+
+#header nav ul li {
+  display: inline-block;
+  list-style: none;
+  /* margin: 0 10px; */
+  margin: 1.02rem 0.5rem;
+  /* position: absolute; */
+  left: 0px;
+}
+#header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  position: relative;
+}
+
+#header nav ul li a:active {
+  color: red;
+}
+
+#header nav ul li a::before {
+  content: "";
+  width: 0;
+  height: 4px;
+  background-color: #6daa3e;
+  position: absolute;
+  top: 140%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+#header nav ul li a:hover::before {
+  width: calc(100% + 10px);
+}
+
+#header .right .bar {
+  right: 10%;
+  top: -23px;
+}
+
+/*==========
+main style
+==========*/
+main {
+  margin: 250px 10% 50px;
+}
+main h1 span {
+  color: #6daa3e;
+}
+main .m-right img {
+  background: linear-gradient(45deg, #2b6300 0%, #c5ff99 100%);
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+}
+main .m-left {
+  margin:10% 0;
+}
+/*========
+About me style
+=========*/
+section{
+  margin:0 10% 50px;
+}
+section img{
+  margin: 0 auto;
+  border-radius:5px;
+  backdrop-filter: blur(50px);
+  box-shadow:5px 5px 10px #6daa3e, -5px -5px 10px #6daa3e;
+}
+section .A-right{
+  margin:0 auto;
+}
+section .A-right h1{
+  margin-top: 1rem;
+}
+section .A-right p{
+  margin:10px 0;
+}
+section .A-right .qulifiactrion{
+  /* display:flex; */
+  justify-content:space-between; 
+ 
+}
+
+section .A-right .qulifiactrion ul li{
+  list-style:circle;
+
+}
+/*==========
+service section
+============*/
+.service .part-2, .service .part-3, .service .part-1{
+  padding:1rem;
+  height: auto;
+  
+}
+/*=============
+portfolio section
+===============*/
+/*=============
+contact section
+===============*/
+.contact #msg{
+  color:#008000;
+  margin-bottom: 20px;
+}
+
+.contact .left-contact h3{
+  margin:3px 0;
+}
+.contact .left-contact h1{
+  margin-bottom:30px;
+}
+
+.contact .left-contact .btn button{
+  margin:20px 0;
+  padding:8px 10px;
+  background: linear-gradient(45deg, #2b6300 0%, #c5ff99 100%);
+  border-radius:5px;
+}
+.contact .right-contact input{
+  width:100%;
+  margin:0.5rem 0;
+  padding:5px 10px;
+  transition:.3s;
+
+}
+.contact .right-contact form button{
+  margin:30px 0 0 0;
+  padding:5px 0;
+  background: linear-gradient(45deg, #2b6300 0%, #c5ff99 100%);
+ transition:.3s;
+ width: 100%;
+}
+.contact .right-contact input:hover{
+  border:none;
+  outline: none;
+  box-shadow:3px 3px 10px #6daa3e, -3px -3px 10px #6daa3e;
+}
+.contact .right-contact textarea{
+  padding:10px 20px;
+  width:100%;
+}
+.contact .right-contact textarea:hover{
+  border:none;
+  outline: none;
+  box-shadow:3px 3px 10px #6daa3e, -3px -3px 10px #6daa3e;
+}
+
+.contact .right-contact button:hover{
+    background: linear-gradient(45deg,#c5ff99 0%,  #2b6300 100%);
+}
+.contact .right-contact button:active{
+  background:red;
+}
+/*============
+footer section
+=============*/
+footer{
+  padding:1.5rem;
+  margin:10px 0 0 0 ;
+}

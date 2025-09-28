@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/output.css">
+  <link rel="stylesheet" href="coustom.css">
+  <title>portfolio</title>
+</head>
+
+<body>
+  <header id="header" class="relative">
+    <div class="H-child">
+      <div class="left">
+        <img src="img/logo-name.png" alt="" />
+      </div>
+
+      <div class="right relative ">
+        <!-- Mobile Menu Button -->
+        <button class="md:hidden" id="btn">
+          <i class="fa-solid fa-bars text-3xl text-[#6daa3e]"></i>
+        </button>
+
+        <!-- Nav Menu -->
+        <nav id="nav"
+          class="hidden absolute right-0 top-[-20px]  shadow-md rounded-md w-40 md:static md:block md:w-auto">
+          <ul
+            class="flex flex-col ittems-center md:flex-row md:space-x-2 p-4 md:p-0 text-gray-700 font-medium md:justify-around">
+            <li><a href="#Home" class="hover:text-[#6daa3e]">HOME</a></li>
+            <li><a href="#About" class="hover:text-[#6daa3e]">ABOUT</a></li>
+            <li><a href="#Service" class="hover:text-[#6daa3e]">SERVICE</a></li>
+            <li><a href="#Contact" class="hover:text-[#6daa3e]">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- main section -->
+  <main id="mar" class="mt-20 my-0 py-0 md:flex md:items-center md:justify-around">
+    <div class="m-right md:order-2">
+      <img class="block" src="img/my-pic.png" alt="Profile picture of Nasim Ahmed Golap" />
+    </div>
+
+    <div id="Home" class=" block mx-auto text-center mt-5 my-0 py-0 md:order-1 md:text-left m-left">
+      <h2 style="margin-bottom: 70px;" class="text-green-50 text-2xl md:text-5xl font-bold md:top-3.5">UX/UI <span
+          class="text-[#6daa3e]"> Designer</span>
+      </h2>
+      <h1 class="text-3xl font-bold text-white md:text-6xl">
+        Hi, I'm <br />
+        <span class="text-[#6daa3e]">Nasim Ahmed Golap</span> From Bangladesh
+      </h1>
+    </div>
+  </main>
+
+  <!-- ------About section------- -->
+  <section id="About">
+    <div class="md:flex  md:basis-[30%] max-lg:[20%]">
+      <div class="A-left mb-5 md:order-1 ">
+        <img class="rounded-3 block h-100" src="img/nasim.png" alt="">
+      </div>
+      <div class="A-right block mt-6 order-2 md:basis-[60%] lg:basis-[68%] ">
+        <h1 style="margin-bottom: 30px;" class="text-center text-2xl font-bold md:text-5xl md:text-center">About Me</h1>
+        <p class="text-justify md:text-3xl"> I am a junior frontend web developer. I edit code beautifully and
+          accurately. I am building a few e-commerce websites that are mobile responsive. This has given me the
+          confidence to become a web developer.</p>
+        <div class="flex qulifiactrion justify-content-between">
+          <div>
+            <h3 class="font-bold md:text-2xl">Skills</h3>
+            <li class="md:text-xl">HTML</li>
+            <ul>
+              <li class="md:text-xl">CSS</li>
+              <li class="md:text-xl">JavaScript</li>
+              <li class="md:text-xl">TailwindCss</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold md:text-2xl">Experience</h3>
+            <ul>
+              <li class="md:text-xl">Web Design <br>and Development</li>
+              <li class="md:text-xl">Abode Illustrator</li>
+              <li class="md:text-xl">Abode PhotoShop</li>
+              <li class="md:text-xl">Ms-word, Ms-excel,<br> Ms-powerpoint</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-bold md:text-2xl">Eduction</h3>
+            <ul>
+              <li class="md:text-xl">Diploma</li>
+              <li class="md:text-xl">SSC</li>
+              <li class="md:text-xl">JSC</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------My Service------- -->
+  <section id="Service" class="service">
+    <h1 style="margin-bottom: 30px;" class="text-center text-2xl font-bold md:text-5xl md:text-center">My service</h1>
+    <div class="text-center md:grid md:grid-cols-3 md:gap-x-5">
+      <div class="part-1 md:bg-[#7f8c8d] rounded-2xl">
+        <i class="fa-solid fa-code text-4xl md:text-[100px] text-[#6daa3e]"></i>
+        <h1 class="font-bold text-2xl">Web Design</h1>
+        <p class="text-justify ">I design websites beautifully and make them responsive on different screens. I have the
+          ability to design according to the needs of the users.</p>
+      </div>
+      <div class="part-2 md:bg-[#7f8c8d] rounded-2xl">
+        <i class="fa-solid fa-crop-simple text-4xl md:text-[100px] text-[#6daa3e]"></i>
+        <h1 class="font-bold text-2xl">UI/UX Design</h1>
+        <p class="text-justify">I currently know a little about UI/UX and am learning more about this topic.</p>
+      </div>
+      <div class="part-3 md:bg-[#7f8c8d] rounded-2xl">
+        <i class="fa-solid fa-database text-4xl  md:text-[100px] text-[#6daa3e]"></i>
+        <h1 class="font-bold text-2xl">Data Entry</h1>
+        <p class="text-justify">I can do data entry work in Excel, I can also do web development work. I have skills in
+          data entry work.</p>
+      </div>
+    </div>
+  </section>
+  <!-- -------Portfolio------ -->
+
+  <!-- -------Contact------ -->
+  <section id="Contact">
+    <h1 style="margin-bottom: 30px;" class="text-center text-2xl font-bold md:text-5xl md:text-center ">Contact</h1>
+    <div class="contact md:grid md:grid-cols-2 md:justify-between md:items-center md:gap-x-2">
+
+      <div class="left-contact text-center">
+        <h1 class="font-bold text-[20px] md:text-3xl md:text-left">Contact Me</h1>
+        <h3 class="md:text-xl md:text-left mx-4"><i class="fa-solid fa-paper-plane text-[#6daa3e]"></i>
+          mdnasimahamed354@gmail.com</h3>
+        <h3 class="md:text-xl md:text-left"> <i class="fa-solid fa-phone-volume text-[#6daa3e]"></i>01782587095</h3>
+        <div style="margin:20px 0 0 0;" class="social-icon md:text-left">
+          <a target="_blank" href="https://www.facebook.com/NasimAhmedGolap"><i
+              class="fa-brands fa-facebook text-3xl"></i></a>
+          <a target="_blank" href="https://github.com/dashboard"> <i class="fa-brands fa-github te  text-3xl"></i></a>
+          <a target="_blank" href="https://www.linkedin.com/in/mdnasimahamed/"><i
+              class="fa-brands fa-square-linkedin text-3xl"></i></a>
+        </div>
+        <div class="text-center md:text-left btn">
+          <a href="" download> <button>Download CV</button> </a>
+        </div>
+      </div>
+
+
+      <div class="right-contact text-center flex flex-col">
+
+        <span id="msg"></span>
+
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required class="border rounded-md p-2 m-2" />
+
+          <input type="email" name="Email" placeholder="Contact@example.com" required
+            class="border rounded-md p-2 m-2" />
+          <input type="tel" name="Phone" placeholder="Phone no" required class="border rounded-md p-2 m-2" />
+          <textarea rows="5" cols="50" placeholder="Comment" name="Comment" required
+            class="border rounded-md p-2 m-2"></textarea>
+          <button type="submit" class=" text-white font-semibold rounded-md m-2"> Send</button>
+        </form>
+      </div>
+
+
+    </div>
+  </section>
+
+  <footer class="bg-gray-800">
+    <p class="text-center">Copyright © Nasim. Made with by <i class="fa-solid fa-heart text-[red]"></i> Easy Tutorials
+    </p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+
+</html>
