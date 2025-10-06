@@ -143,6 +143,7 @@ contact section
   padding:8px 10px;
   background: linear-gradient(45deg, #2b6300 0%, #c5ff99 100%);
   border-radius:5px;
+  transform: 0.5s;;
 }
 .contact .right-contact input{
   width:100%;
@@ -173,10 +174,10 @@ contact section
   box-shadow:3px 3px 10px #6daa3e, -3px -3px 10px #6daa3e;
 }
 
-.contact .right-contact button:hover{
+.contact .right-contact button:hover, .contact .left-contact .btn button:hover{
     background: linear-gradient(45deg,#c5ff99 0%,  #2b6300 100%);
 }
-.contact .right-contact button:active{
+.contact .right-contact button:active, .contact .left-contact .btn button:active{
   background:red;
 }
 /*============
