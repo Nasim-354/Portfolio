@@ -11,6 +11,7 @@ const msg = document.getElementById('msg');
 
 form.addEventListener('submit', e => {
     e.preventDefault()
+    msg.innerText = ' Submitting....please Wait⏳'
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             msg.innerHTML = " Message send Success Full";
@@ -19,5 +20,8 @@ form.addEventListener('submit', e => {
             }, 500);
             form.reset();
         })
-        .catch(error => console.error('Error!', error.message))
+        .catch(error => {
+            msg.innerText = '❌ Wring';
+            console.error('Error!', error.message)
+        })
 })

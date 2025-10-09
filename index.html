@@ -7,6 +7,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ✅ Improved Structured Data (Person Schema) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Nasim Ahmed Golap",
+  "alternateName": "Nasim",
+  "alternateName": "Golap",
+  "url": "https://nasimportfolio354.netlify.app/",
+  "image": "https://mechanical-brown-d4vrszbmfr.edgeone.app/WhatsAp.jpeg",
+  "image": "https://creepy-azure-2gemrqokgv.edgeone.app/nasim.jpg",
+  "title": "junior Developer(react)",
+  "sameAs": [
+    "https://www.facebook.com/NasimAhmedGolap",
+    "https://www.linkedin.com/in/mdnasimahamed/",
+    "https://github.com/Nasim-354"
+  ],
+  "description":"Nasim Ahmed is a passionate Web Developer specializing in front-end technologies, focused on crafting clean and efficient digital experiences.",
+  "address": {
+    "@type":"PostalAddress",
+    "streetAddress":"Tanore, md-alipur",
+    "addressLocality": "Rajshahi",
+    "addressCountry":"Bangladesh"
+  }
+}
+</script>
+
   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
   <link rel="stylesheet" href="css/output.css">
   <link rel="stylesheet" href="coustom.css">
@@ -22,7 +49,7 @@
 
       <div class="right relative ">
         <!-- Mobile Menu Button -->
-        <button class="md:hidden" id="btn">
+        <button class="md:hidden" title="button" id="btn">
           <i class="fa-solid fa-bars text-3xl text-[#6daa3e]"></i>
         </button>
 
@@ -48,8 +75,8 @@
     </div>
 
     <div id="Home" class=" block mx-auto text-center mt-5 my-0 py-0 md:order-1 md:text-left m-left">
-      <h2 style="margin-bottom: 70px;" class="text-green-50 text-2xl md:text-5xl font-bold md:top-3.5">UX/UI <span
-          class="text-[#6daa3e]"> Designer</span>
+      <h2 class="text-green-50 text-2xl md:text-5xl font-bold md:top-3.5 ui-ux">UX/UI <span class="text-[#6daa3e]">
+          Designer</span>
       </h2>
       <h1 class="text-3xl font-bold text-white md:text-6xl">
         Hi, I'm <br />
@@ -65,15 +92,15 @@
         <img class="rounded-3 " src="img/nasim.png" alt="">
       </div>
       <div class="A-right block mt-6 md:order-2">
-        <h1 style="margin-bottom: 30px;" class="text-center text-2xl font-bold md:text-5xl md:text-center">About Me</h1>
+        <h1 class="text-center text-2xl font-bold md:text-5xl md:text-center about-me">About Me</h1>
         <p class="text-justify md:text-3xl"> I am a junior frontend web developer. I edit code beautifully and
           accurately. I am building a few e-commerce websites that are mobile responsive. This has given me the
           confidence to become a web developer.</p>
         <div class="flex qulifiactrion justify-content-between">
           <div>
             <h3 class="font-bold md:text-2xl">Skills</h3>
-            <li class="md:text-xl">HTML</li>
             <ul>
+              <li class="md:text-xl">HTML</li>
               <li class="md:text-xl">CSS</li>
               <li class="md:text-xl">JavaScript</li>
               <li class="md:text-xl">TailwindCss</li>
@@ -104,7 +131,8 @@
 
   <!-- ------My Service------- -->
   <section id="Service" class="service">
-    <h1 style="margin-bottom: 30px;" class="text-center text-2xl font-bold md:text-5xl md:text-center">My service</h1>
+    <h1 class="text-center text-2xl font-bold md:text-5xl md:text-center my-service">My
+      service</h1>
     <div class="text-center md:grid md:grid-cols-3 md:gap-x-5">
       <div class="part-1 md:bg-[#7f8c8d] rounded-2xl">
         <i class="fa-solid fa-code text-4xl md:text-[100px] text-[#6daa3e]"></i>
@@ -128,8 +156,8 @@
   <!-- -------Portfolio------ -->
 
   <!-- -------Contact------ -->
-  <section id="Contact">
-    <h1 style="margin-bottom: 30px;" class="text-center text-2xl font-bold md:text-5xl md:text-center ">Contact</h1>
+  <section id="Contact" class="contact">
+    <h1 class="text-center text-2xl font-bold md:text-5xl md:text-center Contact">Contact</h1>
     <div class="contact md:grid md:grid-cols-2 md:justify-between md:items-center md:gap-x-2">
 
       <div class="left-contact text-center">
@@ -137,7 +165,7 @@
         <h3 class="md:text-xl md:text-left mx-4"><i class="fa-solid fa-paper-plane text-[#6daa3e]"></i>
           mdnasimahamed354@gmail.com</h3>
         <h3 class="md:text-xl md:text-left"> <i class="fa-solid fa-phone-volume text-[#6daa3e]"></i>01782587095</h3>
-        <div style="margin:20px 0 0 0;" class="social-icon md:text-left">
+        <div class="social-icon md:text-left">
           <a target="_blank" href="https://www.facebook.com/NasimAhmedGolap"><i
               class="fa-brands fa-facebook text-3xl"></i></a>
           <a target="_blank" href="https://github.com/dashboard"> <i class="fa-brands fa-github te  text-3xl"></i></a>
@@ -145,14 +173,13 @@
               class="fa-brands fa-square-linkedin text-3xl"></i></a>
         </div>
         <div class="text-center md:text-left btn">
-          <a href="Curriculum Vitae.pdf" download> <button>Download CV </button></a>
+          <a href="img/CV.pdf" download> <button>Download CV </button></a>
         </div>
       </div>
 
 
       <div class="right-contact text-center flex flex-col">
 
-        <span id="msg"></span>
 
         <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Your Name" required class="border rounded-md p-2 m-2" />
@@ -162,6 +189,7 @@
           <input type="tel" name="Phone" placeholder="Phone no" required class="border rounded-md p-2 m-2" />
           <textarea rows="5" cols="50" placeholder="Comment" name="Comment" required
             class="border rounded-md p-2 m-2"></textarea>
+          <span id="msg"></span>
           <button type="submit" class=" text-white font-semibold rounded-md m-2"> Send</button>
         </form>
       </div>
