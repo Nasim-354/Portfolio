@@ -34,7 +34,7 @@
 }
 </script>
 
-  <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="img/logo.png" type="image/icon">
   <link rel="stylesheet" href="css/output.css">
   <link rel="stylesheet" href="coustom.css">
   <title>portfolio</title>
@@ -182,15 +182,21 @@
 
 
         <form name="submit-to-google-sheet">
-          <input type="text" name="Name" placeholder="Your Name" required class="border rounded-md p-2 m-2" />
+          <input type="text" id="name" name="Name" placeholder="Your Name" required class="border rounded-md p-2 m-2" />
 
-          <input type="email" name="Email" placeholder="Contact@example.com" required
+          <span id="error-email"></span>
+          <input id="email" type="email" name="Email" placeholder="Contact@example.com" required
             class="border rounded-md p-2 m-2" />
-          <input type="tel" name="Phone" placeholder="Phone no" required class="border rounded-md p-2 m-2" />
+
+          <span id="error-phone"></span>
+          <input type="tel" id="phone" name="Phone" placeholder="Phone no" value="0"
+            class="border rounded-md p-2 m-2" />
+
           <textarea rows="5" cols="50" placeholder="Comment" name="Comment" required
             class="border rounded-md p-2 m-2"></textarea>
+
           <span id="msg"></span>
-          <button type="submit" class=" text-white font-semibold rounded-md m-2"> Send</button>
+          <button type="submit" id="btn" class=" text-white font-semibold rounded-md m-2"> Send</button>
         </form>
       </div>
 
