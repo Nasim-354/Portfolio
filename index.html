@@ -43,23 +43,27 @@
 </head>
 
 <body>
-  <header id="header" class="relative">
-    <div class="H-child">
+  <header id="header" class="relative z-50">
+    <div class="H-child flex justify-between items-center p-2">
       <div class="left">
-        <img src="img/logo-name.png" alt="" />
+        <img src="img/logo-name.png" alt="logo" class="h-10" />
       </div>
 
-      <div class="right relative ">
-        <!-- Mobile Menu Button -->
-        <button class="md:hidden" title="button" id="btn">
+      <div class="right relative">
+        <!-- Mobile Menu Buttons -->
+        <button class="md:hidden" id="btn" title="open menu">
           <i class="fa-solid fa-bars text-3xl text-[#6daa3e]"></i>
         </button>
 
-        <!-- Nav Menu -->
+        <button class="md:hidden hidden" id="btnX" title="close menu">
+          <i class="fa-solid fa-square-xmark text-3xl text-[#6daa3e]"></i>
+        </button>
+
+        <!-- Navigation Menu -->
         <nav id="nav"
-          class="hidden absolute right-0 top-[-20px]  shadow-md rounded-md w-40 md:static md:block md:w-auto">
+          class="hidden absolute right-0 top-[50px] shadow-md rounded-md w-48 md:static md:block md:w-auto bg-white transition-all duration-300 ease-in-out">
           <ul
-            class="flex flex-col ittems-center md:flex-row md:space-x-2 p-4 md:p-0 text-gray-700 font-medium md:justify-around">
+            class="flex flex-col items-center md:flex-row md:space-x-4 p-4 md:p-0 text-gray-700 font-medium md:justify-around">
             <li><a href="#Home" class="hover:text-[#6daa3e]">HOME</a></li>
             <li><a href="#About" class="hover:text-[#6daa3e]">ABOUT</a></li>
             <li><a href="#Service" class="hover:text-[#6daa3e]">SERVICE</a></li>
@@ -69,6 +73,10 @@
       </div>
     </div>
   </header>
+
+  <!-- Background Overlay -->
+  <div id="overlay" class="hidden fixed inset-0 bg-opacity-500 z-40 transition-opacity duration-300 ease-in-out"></div>
+
 
   <!-- main section -->
   <main id="mar" class="">

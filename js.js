@@ -1,8 +1,26 @@
 const nav = document.getElementById("nav");
 const btn = document.getElementById("btn");
-btn.addEventListener("click", function () {
-  nav.classList.toggle("hidden");
+const btnX = document.getElementById("btnX");
+const overlay = document.getElementById("overlay");
+
+// Open menu
+btn.addEventListener("click", () => {
+  nav.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  btn.classList.add("hidden");
+  btnX.classList.remove("hidden");
 });
+
+// Close menu
+function closeMenu() {
+  nav.classList.add("hidden");
+  overlay.classList.add("hidden");
+  btnX.classList.add("hidden");
+  btn.classList.remove("hidden");
+}
+
+btnX.addEventListener("click", closeMenu);
+overlay.addEventListener("click", closeMenu);
 
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbx9gi5pCKTh5vc55qErj9eX58tAweuBhO317IlOQH9OJl6Gh39ayM4zCWFEPbQRv3s/exec";
